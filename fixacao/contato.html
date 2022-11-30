@@ -10,13 +10,35 @@
 </head>
 
 <body>
-    <div class="um">
-        <h1><a href="./index.html">Header</a></h1>
-    </div>
-    <div class="dois">
-        
-    </div>
-    <div class="seis">Footer</div>
+    <header class="um">
+        <h1><a href="./index.html">Clique aqui para voltar à página inicial</a></h1>
+    </header>
+
+    <main class="dois">
+
+        <form>
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" name="nome" placeholder="Digite seu nome aqui"/>
+
+            <!-- Quando deixamos o id do input com o mesmo nome do for criamos um link que conecta o label (nome) ao input (caixa de texto). Ao clicarmos no label o usuário é direcionado para o input. Selecionamos a tag input:checkbox e colocamos o id antes do type, na primeira posição. o name no input é opcional, id e type são obrigatórios --> 
+
+            <br>
+
+            <label for="telefone">Telefone</label>
+            <input id="telefone" type="text" name="telefone" placeholder="Digite seu telefone aqui"/>
+             
+            <br><br>
+
+            <label for="noticia">Escreva sua notícia abaixo:</label>
+            <textarea id="noticia" type="text" name="noticia" cols="27" rows="28" placeholder="Escreva aqui sua notícia"></textarea>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+
+    </main>
+
+    <footer class="seis">Obrigado por visitar nosso site</footer>
 
 </body>
 

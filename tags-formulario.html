@@ -7,9 +7,27 @@
     <title>HTML - Forms</title>
 </head>
 <body>
-    <p>Uma tag <code>form</code> para começar</p>
-    <p>Um label e um input aqui:</p>
-    <p>E um botão para terminar.</p>
+    <!-- Criando formulário com e-mail, senha e botão enviar -->
+    <form>
+        <label for="email">E-mail</label>
+        <input id="email" type="text" placeholder="Digite aqui seu e-mail"/>
+        <br> <br> <!-- O for do label e o id do input se conectam ao adicionarmos o mesmo nome nos dois. -->
+        <label for="senha">Senha</label>
+        <input id="senha" type="password" placeholder="Digite aqui sua senha" />
+        <br> <br>
+        <button type="submit">Enviar</button>
+    </form>
+    <br> <br>
 
-</body>
+    <!-- Posso também criar o mesmo formulário com o label escondido, acrescentando o hidden. -->
+    <form>
+        <label for="email" hidden>E-mail</label>
+        <input id="email" type="text" placeholder="Digite aqui seu e-mail"/>
+        <br> <br>
+        <label for="senha" hidden>Senha</label>
+        <input id="senha" type="password" placeholder="Digite aqui sua senha" />
+        <br> <br>
+        <button type="submit">Enviar</button> <!-- O tipo do botão precisa ser o submit, para recebermos os dados que foram adicionados -->
+    </form>
+ </body>
 </html>
